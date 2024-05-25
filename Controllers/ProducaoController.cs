@@ -22,31 +22,56 @@ namespace ProducaoAppRestful.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Produto>>> Get()
+        public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
         {
             return await _context.Produtos.ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public async Task<ActionResult<Produto>> GetProdutos(int id)
         {
-            return "teste " + id;
+            var produto = await _context.Produtos.FindAsync(id);
+            return produto;
+
+
+
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Produto>> PostProduto(Produto produto)
         {
+            _context.Produtos.Add(produto);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetProdutos), new { codigo = produto.Codigo }, produto);
         }
 
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> PutProduto(int id, Produto produto)
         {
+
+            _context.Entry(produto).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException){}
+            return NoContent();
         }
 
+
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> DeleteProduto(int id)
         {
+            var produto = await _context.Produtos.FindAsync(id);
+
+             _context.Produtos.Remove(produto);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
+
 }
 
