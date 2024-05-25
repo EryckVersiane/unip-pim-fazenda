@@ -7,6 +7,7 @@ namespace MeuAppRestful.Controllers
     [ApiController]
     public class MeuController : ControllerBase
     {
+        
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
