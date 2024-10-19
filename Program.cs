@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using MeuAppRestful.Data;
+using UnipPimFazenda.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using MeuAppRestful.Models;
+using UnipPimFazenda.Models;
 
-namespace MeuAppRestful.Data
+namespace UnipPimFazenda.Data
 {
     public class AppDbContext : DbContext
     {

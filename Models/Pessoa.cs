@@ -1,4 +1,4 @@
-namespace MeuAppRestful.Models
+namespace UnipPimFazenda.Models
 {
     public class Pessoa {
         public int Id {get; set;}
