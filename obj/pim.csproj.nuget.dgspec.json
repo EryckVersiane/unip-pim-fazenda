@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/adelson/wsp/faculdade-eryck/pim-fazenda/pim/pim.csproj": {}
+    "/home/eryck/unip-pim-fazenda/pim.csproj": {}
   },
   "projects": {
-    "/home/adelson/wsp/faculdade-eryck/pim-fazenda/pim/pim.csproj": {
+    "/home/eryck/unip-pim-fazenda/pim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/adelson/wsp/faculdade-eryck/pim-fazenda/pim/pim.csproj",
+        "projectUniqueName": "/home/eryck/unip-pim-fazenda/pim.csproj",
         "projectName": "pim",
-        "projectPath": "/home/adelson/wsp/faculdade-eryck/pim-fazenda/pim/pim.csproj",
-        "packagesPath": "/home/adelson/.nuget/packages/",
-        "outputPath": "/home/adelson/wsp/faculdade-eryck/pim-fazenda/pim/obj/",
+        "projectPath": "/home/eryck/unip-pim-fazenda/pim.csproj",
+        "packagesPath": "/home/eryck/.nuget/packages/",
+        "outputPath": "/home/eryck/unip-pim-fazenda/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/adelson/.nuget/NuGet/NuGet.Config"
+          "/home/eryck/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.117/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/eryck/.dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
         }
       }
     }
