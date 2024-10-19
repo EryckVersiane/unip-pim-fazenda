@@ -1,7 +1,17 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace UnipPimFazenda.Models
 {
-    public class Pessoa {
-        public int Id {get; set;}
-        public string nome {get; set;}
+    [Table("pessoa", Schema = "dbo")]
+    public class Pessoa
+    {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column("id")]
+        public int Id { get; set; }
+
+        [Column("nome")]
+        public string nome { get; set; }
     }
 }

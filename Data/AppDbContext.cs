@@ -10,11 +10,6 @@ namespace UnipPimFazenda.Data
         public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder ) {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Produto>(entity => {
-                entity.ToTable("produtos", "dbo");
-                entity.HasKey(e => e.Codigo);
-            });
         }
     }
 }
