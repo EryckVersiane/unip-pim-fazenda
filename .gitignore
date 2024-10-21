@@ -1,2 +1,5 @@
 /obj/
 /bin/
+/publish/
+/lixo/
+/pin-fazenda-app/node_modules/
