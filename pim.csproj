@@ -19,16 +19,16 @@
     <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
   </PropertyGroup>
 
-  <!-- <PropertyGroup>
+  <PropertyGroup>
     <RunWebpack Condition="'$(RunWebpack)' == ''">false</RunWebpack>
-    <SpaRoot>app/</SpaRoot>
+    <SpaRoot>pim-fazenda-app/</SpaRoot>
     <DefaultItemExcludes>$(SpaRoot)node_modules/**/*</DefaultItemExcludes>
   </PropertyGroup>
 
   <Target Name="BuildSpa" AfterTargets="Build" Condition="'$(RunWebpack)' == 'false'">
-    <Exec Command="npm install" WorkingDirectory="$(SpaRoot)" /> 
+    <!-- <Exec Command="npm install" WorkingDirectory="$(SpaRoot)" />  -->
     <Exec Command="npm run build" WorkingDirectory="$(SpaRoot)" />
-  </Target> -->
+  </Target>
 
   <ItemGroup>
     <PackageReference Include="Core.System.ServiceProcess" Version="2.0.1" />
