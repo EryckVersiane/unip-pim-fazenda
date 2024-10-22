@@ -8,6 +8,8 @@ import { HomeModule } from './home/home.module';
 import { FuncionarioModule } from './funcionario/funcionario.module';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
+import { provideHttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,14 @@ import { routes } from './app.routes';
     BrowserModule,
     RouterModule.forRoot(routes),
     AppRoutingModule,
+    FormsModule,
     HomeModule,
     FuncionarioModule
+
   ],
   providers: [
-    { provide: LocationStrategy, useClass: HashLocationStrategy}
+    { provide: LocationStrategy, useClass: HashLocationStrategy},
+    provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })

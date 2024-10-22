@@ -7,7 +7,7 @@ namespace UnipPimFazenda.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Pessoa> Pessoas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder ) {
         }

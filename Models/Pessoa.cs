@@ -12,6 +12,6 @@ namespace UnipPimFazenda.Models
         public int Id { get; set; }
 
         [Column("nome")]
-        public string nome { get; set; }
+        public string Nome { get; set; } = "";
     }
 }

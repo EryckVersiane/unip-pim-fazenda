@@ -1,10 +1,10 @@
-using System.Runtime.Versioning;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using UnipPimFazenda.Data;
 using Serilog.Events;
+using UnipPimFazenda.Config;
+using UnipPimFazenda.Services;
 
 namespace UnipPimFazenda
 {
@@ -22,7 +22,12 @@ namespace UnipPimFazenda
             {
 
                 var builder = WebApplication.CreateBuilder(args);
-                builder.Services.AddControllers();
+                builder.Services.AddControllers(options =>
+                {
+                    options.Conventions.Add(new LowercaseRouteConvention());
+                    options.Conventions.Insert(0, new RoutePrefixConvention("pim/v1"));
+                });
+                
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen(c =>
                 {
@@ -91,7 +96,7 @@ namespace UnipPimFazenda
 
         private static void AdicionarScoped(WebApplicationBuilder builder)
         {
-            // builder.Services.AddScoped<AppService>();
+            builder.Services.AddScoped<PessoaService>();
         }
 
 

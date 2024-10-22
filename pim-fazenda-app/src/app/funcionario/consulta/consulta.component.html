@@ -1,0 +1,14 @@
+<button type="button" (click)="consultar()">Consultar</button>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Nome</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pessoa of pessoas; index as i">
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+        </tr>
+    </tbody>
+</table>
