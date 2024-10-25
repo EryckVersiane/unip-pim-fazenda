@@ -1,26 +1,46 @@
 import { Component } from '@angular/core';
-import { PessoaService } from '../../pessoa.service';
-import { PessoaModel } from '../../models/pessoa.model';
+import { Router } from '@angular/router';
+import { LoginService } from '../../login.service'; 
+import { UsuarioModel } from '../../models/usuario.model';
 
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
-  styleUrl: './cadastro.component.scss'
+  styleUrls: ['./cadastro.component.scss']
 })
 export class CadastroComponent {
+  usuario: string = '';
+  senha: string = '';
+  pessoaId: number = 0;
+  erroCadastro: boolean = false;
+  cadastroSucesso: boolean = false;
 
- nome: string = '';
- pessoa: PessoaModel = {id: 0, nome: ''};
+  constructor(private loginService: LoginService, private router: Router) {}
 
-  constructor(private pessoaService: PessoaService) {}
-
-  salvar() {
-    let pessoa: PessoaModel = {
+  cadastrar() {
+    let usuarioData: UsuarioModel = {
       id: 0,
-      nome: this.nome
-    }
-    this.pessoaService.postPessoa(pessoa).subscribe( data => {
-      this.pessoa = data;
-    });
+      usuario: this.usuario,
+      senha: this.senha,
+      estado: '', 
+      pessoa_id: this.pessoaId
+    };
+
+    this.loginService.cadastrar(usuarioData).subscribe(
+      (data) => {
+        if (data && data.id > 0) {
+          this.cadastroSucesso = true;
+          this.erroCadastro = false;
+          console.log('Cadastro realizado com sucesso');
+          this.router.navigate(['/login']); 
+        } else {
+          this.erroCadastro = true;
+        }
+      },
+      (error) => {
+        console.error('Erro no cadastro', error);
+        this.erroCadastro = true;
+      }
+    );
   }
 }

@@ -49,8 +49,8 @@ create table dbo.fornecedor (
 
 create table dbo.usuario (
     id int identity(1,1) constraint usuario_pk primary key ,
-    usuario varchar(20) not null ,
-    senha varchar(512) not null,
+    usuario varchar(50) not null ,
+    senha varchar(50) not null,
     estado varchar(1), -- se for senha gerada automáticamente deve ser A depois que for alterada deve ser null ou M
     pessoa_id int not null constraint usuario_pessoa_FK references dbo.pessoa
 );
@@ -61,4 +61,10 @@ create table dbo.produto (
     nome varchar(124) not null
 );
 
+create table dbo.login (
+    id int identity(1,1) constraint login_pk primary key,
+    data_interacao datetime,
+    tipo varchar(1), -- se for entrada E ser for saida S
+    usuario_id int not null constraint login_usuario_FK references dbo.usuario,
+);
 

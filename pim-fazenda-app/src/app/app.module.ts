@@ -10,10 +10,13 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule,
     HomeModule,
-    FuncionarioModule
+    FuncionarioModule,
+    ReactiveFormsModule
 
   ],
   providers: [
@@ -31,3 +35,5 @@ import { FormsModule } from '@angular/forms';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
