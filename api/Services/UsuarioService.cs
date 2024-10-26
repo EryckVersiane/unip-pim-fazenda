@@ -74,8 +74,21 @@ namespace UnipPimFazenda.Services
             dto.Email = usuario.Email;
 
             return dto;
-            
+
         }
-            
+
+        public async Task Atualizar(UsuarioRequestDto dto, int id)
+        {
+
+            UsuarioModel usuario = _db.Usuarios.Find(id);
+            usuario.Nome = dto.Nome;
+            usuario.Telefone = dto.Telefone;
+            usuario.Cpf = dto.Cpf;
+            usuario.Email = dto.Email;
+
+            await _db.SaveChangesAsync();
+
+        }
+
     }
 }

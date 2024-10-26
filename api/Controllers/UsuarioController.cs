@@ -45,5 +45,15 @@ namespace UnipPimFazenda.Controllers
 
             return Ok(resposta);
         }
+
+        [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Atulizar usuário")]
+        [ProducesResponseType(typeof(UsuarioDto), 204)]
+        public async Task<IActionResult> Atualizar([FromBody] UsuarioRequestDto usuario, int id)
+        {
+            await _usuarioService.Atualizar(usuario, id);
+
+            return NoContent();
+        }
     }
 }
