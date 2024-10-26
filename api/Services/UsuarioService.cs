@@ -35,10 +35,47 @@ namespace UnipPimFazenda.Services
             usuarioDto.Nome = usuarioModel.Nome;
             usuarioDto.Telefone = usuarioModel.Telefone;
             usuarioDto.Cpf = usuarioModel.Cpf;
-            usuarioDto.Email= usuarioModel.Email;    
+            usuarioDto.Email = usuarioModel.Email;
 
-            return usuarioDto;  
-        } 
+            return usuarioDto;
+        }
 
+        public async Task<List<UsuarioDto>> Listar()
+        {
+            List<UsuarioModel> usuarios = await _db.Usuarios.ToListAsync();
+
+            List<UsuarioDto> dtos = new List<UsuarioDto>();
+
+            foreach (UsuarioModel usuario in usuarios)
+            {
+                UsuarioDto dto = new UsuarioDto();
+                dto.Id = usuario.Id;
+                dto.Nome = usuario.Nome;
+                dto.Telefone = usuario.Telefone;
+                dto.Cpf = usuario.Cpf;
+                dto.Email = usuario.Email;
+
+                dtos.Add(dto);
+            }
+
+            return dtos;
+
+        }
+
+        public async Task<UsuarioDto> Consultar(int id)
+        {
+
+            UsuarioModel usuario = _db.Usuarios.Find(id);
+            UsuarioDto dto = new UsuarioDto();
+            dto.Id = usuario.Id;
+            dto.Nome = usuario.Nome;
+            dto.Telefone = usuario.Telefone;
+            dto.Cpf = usuario.Cpf;
+            dto.Email = usuario.Email;
+
+            return dto;
+            
+        }
+            
     }
 }

@@ -18,10 +18,30 @@ namespace UnipPimFazenda.Controllers
 
         [HttpPost]
         [SwaggerOperation(Summary = "Cadastro de novo usuário")]
-        [ProducesResponseType(typeof(UsuarioDto),201)]
+        [ProducesResponseType(typeof(UsuarioDto), 201)]
         public async Task<IActionResult> Criar([FromBody] UsuarioRequestDto usuario)
         {
             var resposta = await _usuarioService.Criar(usuario);
+
+            return Ok(resposta);
+        }
+
+        [HttpGet]
+        [SwaggerOperation(Summary = "Lista de usuários")]
+        [ProducesResponseType(typeof(List<UsuarioDto>), 200)]
+        public async Task<IActionResult> Listar()
+        {
+            List<UsuarioDto> resposta = await _usuarioService.Listar();
+
+            return Ok(resposta);
+        }
+
+        [HttpGet("{id}")]
+        [SwaggerOperation(Summary = "Detalha usuário")]
+        [ProducesResponseType(typeof(UsuarioDto), 200)]
+        public async Task<IActionResult> Consultar(int id)
+        {
+            UsuarioDto resposta = await _usuarioService.Consultar(id);
 
             return Ok(resposta);
         }
