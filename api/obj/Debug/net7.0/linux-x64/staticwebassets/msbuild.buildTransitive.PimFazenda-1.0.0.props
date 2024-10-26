@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/PimFazenda-1.0.0.props" />
+</Project>

@@ -1,0 +1,3 @@
+/home/eryck/unip-pim-fazenda/api/publish/appsettings.json
+/home/eryck/unip-pim-fazenda/api/publish/PimFazenda-1.0.0.pdb
+/home/eryck/unip-pim-fazenda/api/publish/PimFazenda-1.0.0

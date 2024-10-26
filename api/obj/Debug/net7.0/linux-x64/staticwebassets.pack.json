@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets/3rdpartylicenses.txt"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-4AAGFL4B.js",
+      "PackagePath": "staticwebassets/chunk-4AAGFL4B.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-IMDXBTNU.js",
+      "PackagePath": "staticwebassets/chunk-IMDXBTNU.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-SR5BH674.js",
+      "PackagePath": "staticwebassets/chunk-SR5BH674.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-TUZTIVZ6.js",
+      "PackagePath": "staticwebassets/chunk-TUZTIVZ6.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-XBWO5WWR.js",
+      "PackagePath": "staticwebassets/chunk-XBWO5WWR.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/main-OQBEAKGL.js",
+      "PackagePath": "staticwebassets/main-OQBEAKGL.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/polyfills-FFHMD2TL.js",
+      "PackagePath": "staticwebassets/polyfills-FFHMD2TL.js"
+    },
+    {
+      "Id": "/home/eryck/unip-pim-fazenda/api/wwwroot/styles-5INURTSO.css",
+      "PackagePath": "staticwebassets/styles-5INURTSO.css"
+    },
+    {
+      "Id": "obj/Debug/net7.0/linux-x64/staticwebassets/msbuild.PimFazenda-1.0.0.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/linux-x64/staticwebassets/msbuild.build.PimFazenda-1.0.0.props",
+      "PackagePath": "build\\PimFazenda-1.0.0.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/linux-x64/staticwebassets/msbuild.buildMultiTargeting.PimFazenda-1.0.0.props",
+      "PackagePath": "buildMultiTargeting\\PimFazenda-1.0.0.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/linux-x64/staticwebassets/msbuild.buildTransitive.PimFazenda-1.0.0.props",
+      "PackagePath": "buildTransitive\\PimFazenda-1.0.0.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
