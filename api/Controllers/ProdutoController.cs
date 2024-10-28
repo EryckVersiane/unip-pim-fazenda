@@ -45,5 +45,26 @@ namespace UnipPimFazenda.Controllers
 
             return Ok(resposta);
         }
+
+        [HttpPut("{id}")]
+        [SwaggerOperation(Summary = "Atulizar produto")]
+        [ProducesResponseType(204)]
+        public async Task<IActionResult> Atualizar([FromBody] ProdutoRequestDto produto, int id)
+        {
+            await _produtoService.Atualizar(produto, id);
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Deletar produto")]
+        [ProducesResponseType(204)]
+        public async Task<IActionResult> Remover(int id)
+        {
+            await _produtoService.Remover(id);
+
+            return NoContent();
+        }
+
     }
 }

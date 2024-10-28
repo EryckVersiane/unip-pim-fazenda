@@ -78,5 +78,28 @@ namespace UnipPimFazenda.Services
             return dto;
 
         }
+
+        public async Task Atualizar(ProdutoRequestDto dto, int id)
+        {
+
+            ProdutoModel produto = _db.Produtos.Find(id);
+            produto.Nome = dto.Nome;
+            produto.Preco = dto.Preco;
+            produto.Quantidade = dto.Quantidade;
+            produto.Peso = dto.Peso;
+            produto.UnidadeMedida = dto.UnidadeMedida;
+
+            await _db.SaveChangesAsync();
+
+        }
+
+        public async Task Remover(int id)
+        {
+            ProdutoModel produto = _db.Produtos.Find(id);
+            _db.Produtos.Remove(produto);
+
+            await _db.SaveChangesAsync();
+        }
+
     }
 }
