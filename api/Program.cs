@@ -27,7 +27,7 @@ namespace UnipPimFazenda
                     options.Conventions.Add(new LowercaseRouteConvention());
                     options.Conventions.Insert(0, new RoutePrefixConvention("pim/v1"));
                 });
-                
+
                 builder.Services.AddEndpointsApiExplorer();
                 builder.Services.AddSwaggerGen(c =>
                 {
@@ -98,6 +98,8 @@ namespace UnipPimFazenda
         {
             builder.Services.AddScoped<PessoaService>();
             builder.Services.AddScoped<UsuarioService>();
+            builder.Services.AddScoped<FornecedorService>();
+            builder.Services.AddScoped<ProdutoService>();
         }
 
 

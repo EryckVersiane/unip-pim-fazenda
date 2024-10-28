@@ -48,12 +48,23 @@ namespace UnipPimFazenda.Controllers
 
         [HttpPut("{id}")]
         [SwaggerOperation(Summary = "Atulizar usuário")]
-        [ProducesResponseType(typeof(UsuarioDto), 204)]
+        [ProducesResponseType(204)]
         public async Task<IActionResult> Atualizar([FromBody] UsuarioRequestDto usuario, int id)
         {
             await _usuarioService.Atualizar(usuario, id);
 
             return NoContent();
         }
+
+        [HttpDelete("{id}")]
+        [SwaggerOperation(Summary = "Deletar usuário")]
+        [ProducesResponseType(204)]
+        public async Task<IActionResult> Remover(int id)
+        {
+            await _usuarioService.Remover(id);
+
+            return NoContent();
+        }
+
     }
 }
