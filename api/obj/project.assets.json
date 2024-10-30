@@ -11176,19 +11176,19 @@
     ]
   },
   "packageFolders": {
-    "/home/eryck/.nuget/packages/": {}
+    "/home/anthoni/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/eryck/unip-pim-fazenda/api/pim.csproj",
+      "projectUniqueName": "/home/anthoni/wsp/unip-pim-fazenda/api/pim.csproj",
       "projectName": "PimFazenda-1.0.0",
-      "projectPath": "/home/eryck/unip-pim-fazenda/api/pim.csproj",
-      "packagesPath": "/home/eryck/.nuget/packages/",
-      "outputPath": "/home/eryck/unip-pim-fazenda/api/obj/",
+      "projectPath": "/home/anthoni/wsp/unip-pim-fazenda/api/pim.csproj",
+      "packagesPath": "/home/anthoni/.nuget/packages/",
+      "outputPath": "/home/anthoni/wsp/unip-pim-fazenda/api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/eryck/.nuget/NuGet/NuGet.Config"
+        "/home/anthoni/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -11320,7 +11320,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/eryck/.dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/anthoni/.dotnet/sdk/7.0.410/RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -12,6 +12,7 @@ namespace UnipPimFazenda.Data
         public DbSet<UsuarioModel> Usuarios { get; set; }
         public DbSet<FornecedorModel> Fornecedores { get; set; }
         public DbSet<ProdutoModel> Produtos { get; set; }
+        public DbSet<FuncionarioModel> Funcionarios { get; set; }
         // public DbSet<Cadastro> Cadastros { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
