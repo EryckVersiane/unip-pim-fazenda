@@ -1,0 +1,31 @@
+<form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label>Nome</label>
+        <input formControlName="nome" type="text" required />
+    </div>
+
+    <div>
+        <label>Telefone</label>
+        <input formControlName="telefone" type="text" />
+    </div>
+
+    <div>
+        <label>CPF</label>
+        <input formControlName="cpf" type="text" />
+    </div>
+
+    <div>
+        <label>Email</label>
+        <input formControlName="email" type="email" required />
+    </div>
+
+    <div>
+        <label>Senha</label>
+        <input formControlName="senha" type="password" required />
+    </div>
+
+    <button type="submit" [disabled]="usuarioForm.invalid">Cadastrar</button>
+</form>
+
+
+<app-usuario-consulta></app-usuario-consulta>
