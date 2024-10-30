@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5F9r2mI5rRa48dBlAIMJNQwihAsChYC9id7BbtbDk7c=",
+  "Hash": "LTQrnKx5YMPvS0Zda1sS8ZcBADp3Rg82rN7DIjcNIgY=",
   "Source": "PimFazenda-1.0.0",
   "BasePath": "_content/PimFazenda-1.0.0",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "wwwroot/chunk-AJCZQC62.js"
     },
     {
-      "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-JYRTIBF6.js",
+      "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-IMO4VI6Q.js",
       "SourceId": "PimFazenda-1.0.0",
       "SourceType": "Discovered",
       "ContentRoot": "/home/eryck/unip-pim-fazenda/api/wwwroot/",
       "BasePath": "_content/PimFazenda-1.0.0",
-      "RelativePath": "chunk-JYRTIBF6.js",
+      "RelativePath": "chunk-IMO4VI6Q.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/chunk-JYRTIBF6.js"
+      "OriginalItemSpec": "wwwroot/chunk-IMO4VI6Q.js"
+    },
+    {
+      "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-NZY6REBO.js",
+      "SourceId": "PimFazenda-1.0.0",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/eryck/unip-pim-fazenda/api/wwwroot/",
+      "BasePath": "_content/PimFazenda-1.0.0",
+      "RelativePath": "chunk-NZY6REBO.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/chunk-NZY6REBO.js"
     },
     {
       "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-OJ6IZ5L6.js",
@@ -83,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/chunk-OJ6IZ5L6.js"
-    },
-    {
-      "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-PP3WKNP3.js",
-      "SourceId": "PimFazenda-1.0.0",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/eryck/unip-pim-fazenda/api/wwwroot/",
-      "BasePath": "_content/PimFazenda-1.0.0",
-      "RelativePath": "chunk-PP3WKNP3.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/chunk-PP3WKNP3.js"
     },
     {
       "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/chunk-YWSZ2XOQ.js",
@@ -153,12 +153,12 @@
       "OriginalItemSpec": "wwwroot/index.html"
     },
     {
-      "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/main-2JPJ3MAT.js",
+      "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/main-TV2AAQES.js",
       "SourceId": "PimFazenda-1.0.0",
       "SourceType": "Discovered",
       "ContentRoot": "/home/eryck/unip-pim-fazenda/api/wwwroot/",
       "BasePath": "_content/PimFazenda-1.0.0",
-      "RelativePath": "main-2JPJ3MAT.js",
+      "RelativePath": "main-TV2AAQES.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,7 +167,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/main-2JPJ3MAT.js"
+      "OriginalItemSpec": "wwwroot/main-TV2AAQES.js"
     },
     {
       "Identity": "/home/eryck/unip-pim-fazenda/api/wwwroot/polyfills-FFHMD2TL.js",
