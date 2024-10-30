@@ -90,5 +90,13 @@ namespace UnipPimFazenda.Services
 
         }
 
+        public async Task Remover(int id)
+        {
+            UsuarioModel usuario = _db.Usuarios.Find(id);
+            _db.Usuarios.Remove(usuario);
+
+            await _db.SaveChangesAsync();
+        }
+
     }
 }

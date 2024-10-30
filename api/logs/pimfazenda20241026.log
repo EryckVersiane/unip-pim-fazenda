@@ -123,3 +123,4 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
    at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
 2024-10-26 15:05:53.679 -03:00 [INF] Sistema finalizado
 2024-10-26 15:10:04.138 -03:00 [INF] Sistema finalizado
+2024-10-26 15:49:56.934 -03:00 [INF] Sistema finalizado

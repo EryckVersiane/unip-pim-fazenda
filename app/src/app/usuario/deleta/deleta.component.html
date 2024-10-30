@@ -1,0 +1,19 @@
+<hr>
+<table>
+    <thead>
+        <th>ID</th>
+        <th>NOME</th>sss
+        <th>CPF</th>
+        <th>TELEFONE</th>
+        <th>E-MAIL</th>
+    </thead>
+    <tr *ngFor="let usuario of usuarios">
+
+        <td>{{usuario.id}}</td>
+        <td>{{usuario.nome}}</td>
+        <td>{{usuario.cpf}}</td>
+        <td>{{usuario.telefone}}</td>
+        <td>{{usuario.email}}</td>
+
+    </tr>
+</table>

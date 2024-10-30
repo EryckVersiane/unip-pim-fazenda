@@ -21,13 +21,13 @@
 
   <PropertyGroup>
     <RunWebpack Condition="'$(RunWebpack)' == ''">false</RunWebpack>
-    <SpaRoot>pim-fazenda-app/</SpaRoot>
+    <SpaRoot>../app/</SpaRoot>
     <DefaultItemExcludes>$(SpaRoot)node_modules/**/*</DefaultItemExcludes>
   </PropertyGroup>
 
   <Target Name="BuildSpa" AfterTargets="Build" Condition="'$(RunWebpack)' == 'false'">
     <!-- <Exec Command="npm install" WorkingDirectory="$(SpaRoot)" />  -->
-    <!-- <Exec Command="npm run build" WorkingDirectory="$(SpaRoot)" /> -->
+    <Exec Command="npm run build" WorkingDirectory="$(SpaRoot)" />
   </Target>
 
   <ItemGroup>
